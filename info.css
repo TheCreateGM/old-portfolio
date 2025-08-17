@@ -1,0 +1,306 @@
+/* For mobile phones: */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    transition: 0.6s cubic-bezier(0.28, -0.03, 0, 0.99);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 15px;
+}
+
+/* Nav */
+
+:root {
+    --primary-color: #ffffeb;
+    --secondary-color: #212121;
+    --box-color: #ffffc4;
+    --footer-color: #ffffb1;
+}
+
+.dark-theme {
+    --primary-color: #000015;
+    --secondary-color: #fff;
+    --box-color: #00003d;
+    --footer-color: #000050;
+}
+
+#icon {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    padding: 0;
+}
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    background: var(--primary-color);
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 8px 9px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 8px 12px;
+    position: relative;
+    background-color: var(--box-color);
+    border-radius: 5px;
+    display: inline-block;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+nav ul li a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 13px;
+}
+
+nav ul li:hover {
+    background: #f44336;
+    transition: 1s;
+}
+
+/* Main */
+
+.main {
+    width: 60%;
+    height: 30%;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    background-color: var(--box-color);
+    border-radius: 20px;
+    display: block;
+}
+
+.main-text {
+    padding-top: 45%;
+    text-align: center;
+}
+
+h1 {
+    color: var(--secondary-color);
+}
+
+p {
+    color: var(--secondary-color);
+}
+
+/* Info 1 */
+
+.hero-2 {
+    height: 150vh;
+    width: 100%;
+    background: var(--box-color);
+    position: relative;
+}
+
+h2 {
+    color: var(--secondary-color);
+}
+
+.hero-btn {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: var(--secondary-color);
+    border-radius: 15px;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: var(--box-color);
+    position: relative;
+    cursor: pointer;
+    width: 30%;
+    left: 35%;
+    top: 50%;
+}
+
+.hero-btn:hover {
+    background: #f44336;
+    transition: 1s;
+}
+
+.box-input {
+    padding-top: 5%;
+    text-align: center;
+}
+
+.row {
+    margin-top: 5%;
+    display: block;
+    justify-content: space-between;
+    margin: 5%;
+}
+
+/*
+.row-info {
+    display: block;
+    justify-content: space-between;
+    padding: 2%;
+}
+*/
+
+.col {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.col img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+.col a {
+    width: 100%;
+    display: block;
+}
+
+.others-col {
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+
+.others-col img {
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+    background-size: cover;
+}
+
+.others-col p {
+    padding: 0;
+    color: var(--secondary-color);
+}
+
+.others-col h3 {
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layer:hover {
+    background: var(--footer-color);
+}
+
+.layer h3 {
+    width: 100%;
+    font-weight: 500;
+    color: var(--secondary-color);
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.layer:hover h3 {
+    bottom: 49%;
+    opacity: 1;
+}
+
+/* Project */
+
+.p-col {
+    padding: 3%;
+}
+
+.hero-3 {
+    height: 25vh;
+    width: 100%;
+    background: var(--primary-color);
+    position: relative;
+}
+
+/* Footer */
+
+.footer {
+    margin: 0;
+    padding: 0.23%;
+    background-color: var(--footer-color);
+    /*
+    font-size: 11px;
+    */
+    height: 4vh;
+}
+
+h3 {
+    color: var(--secondary-color);
+}
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    /* Main */
+    .main {
+        width: 50%;
+        height: 20%;
+        top: 25%;
+        left: 25%;
+    }
+    .main-text {
+        padding-top: 5%;
+        bottom: 25%;
+        left: 35%;
+        margin: auto;
+    }
+    /* Info 1 */
+    .hero-2 {
+        height: 150vh;
+    }
+    .hero-btn {
+        width: 20%;
+        left: 40%;
+    }
+    .row {
+        display: flex;
+        margin: 2%;
+    }
+    .others-col {
+        margin-bottom: 2%;
+    }
+    .others-col p {
+        text-align: center;
+    }
+    /* Project */
+    .hero-3 {
+        height: 50vh;
+    }
+}

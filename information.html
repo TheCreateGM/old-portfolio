@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Information</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="icon" type="image/x-icon" href="./icon.png">
+    <link rel="stylesheet" href="info.css">
+</head>
+
+<body>
+    <!--nav-->
+    <section class="hero">
+        <nav>
+            <ul>
+                <li>
+                    <a href="./index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="./information.html">ABOUT</a>
+                </li>
+            </ul>
+            <!-- dark mode and light mode -->
+            <img src="img/moon.png" id="icon">
+        </nav>
+        <!--Main-->
+        <div class="main">
+            <div class="main-text">
+                <h1 class="text-2xl font-bold">Information</h1>
+                <p>The information about me.</p>
+            </div>
+        </div>
+        <a href="#info-1" class="hero-btn">More</a>
+    </section>
+    <!--info-1-->
+    <section class="hero-2" id="info-1">
+        <div class="box-input">
+            <h2 class="text-2xl font-bold">About Me</h2>
+            <p>Many people call me Axo and you can call me Axo if you want. Im from Malaysia.</p>
+            <!--info-layer-1-->
+            <div class="row">
+                <div class="others-col">
+                    <img src="img/info/1.png">
+                    <h3></h3>
+                    <p>Im a linux user who using Fedora Spin XFCE desktop (main) and EndeavourOS Community Edition BSPWM base on Arch Linux (for networking)</p>
+                </div>
+                <div class="others-col">
+                    <img src="img/info/2.png">
+                    <h3></h3>
+                    <p>Im good at making website by using html, css, and js like this page you see here.</p>
+                </div>
+                <div class="others-col">
+                    <img src="img/info/3.png">
+                    <h3></h3>
+                    <p>Im also making game stuff using Godot, Unity (C#), LWJGL (Java), and Pygame (Python) but most of it project have been cancel...</p>
+                </div>
+            </div>
+            <!--info-layer-2-->
+            <div class="row">
+                <div class="others-col">
+                    <img src="img/info/4.png">
+                    <h3></h3>
+                    <p>I can say that i always do 3D model stuff in Blender because i will use my model to my game.</p>
+                </div>
+            </div>
+    </section>
+    <!--info 2-->
+    <section class="hero" id="info-2">
+        <!--game-info-->
+        <div class="box-input">
+            <h2 class="text-2xl font-bold">Gallery</h2>
+            <p>Image of my work that i still working on.</p>
+            <center>
+                <div class="row grid grid-cols-3 grid-rows-3 gap-4">
+                    <div class="col">
+                        <img src="gallery/img/1.jpg" width=50 height=50/>
+                        <div class="layer">
+                            <a href="gallery/art.html">
+                                <h3>Art</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="gallery/img/2.jpg" width=50 height=50/>
+                        <div class="layer">
+                            <a href="gallery/photo.html">
+                                <h3>Photograph</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="gallery/img/3.jpg"  width=50 height=50/>
+                        <div class="layer">
+                            <a href="gallery/model.html">
+                                <h3>3D Model</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </center>
+    </section>
+    <!--project-->
+    <section class="hero-3">
+        <div class="box-input">
+            <h2 class="text-2xl font-bold">My project</h2>
+            <p class="p-col">I still work on it but i will post it in project page just go click at button below to see the project that i working on beacuse some of it already done and some of it unfinish.</p>
+            <a href="project.html" class="hero-btn">go to project</a>
+        </div>
+    </section>
+    <!--Footer-->
+    <div>
+        <h3 class="footer text-sm font-bold">Made by AxoGM</h3>
+    </div>
+    <script>
+        // dark mode
+        var icon = document.getElementById("icon");
+        icon.onclick = function() {
+            document.body.classList.toggle("dark-theme");
+            if (document.body.classList.contains("dark-theme")) {
+                icon.src = "img/sun.png";
+            } else {
+                icon.src = "img/moon.png";
+            }
+        }
+    </script>
+</body>
+
+</html>

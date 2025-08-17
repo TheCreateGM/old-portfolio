@@ -1,0 +1,181 @@
+/* For mobile phones: */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    transition: 0.6s cubic-bezier(0.28, -0.03, 0, 0.99);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 15px;
+}
+
+/* Nav */
+
+:root {
+    --primary-color: #ffffeb;
+    --secondary-color: #212121;
+    --box-color: #ffffc4;
+    --footer-color: #ffffb1;
+}
+
+.dark-theme {
+    --primary-color: #000015;
+    --secondary-color: #fff;
+    --box-color: #00003d;
+    --footer-color: #000050;
+}
+
+#icon {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    padding: 0;
+}
+
+.hero {
+    height: 15vh;
+    width: 100%;
+    background: var(--primary-color);
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 8px 9px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 8px 12px;
+    position: relative;
+    background-color: var(--box-color);
+    border-radius: 5px;
+    display: inline-block;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+nav ul li a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 13px;
+}
+
+nav ul li:hover {
+    background: #f44336;
+    transition: 1s;
+}
+
+/* Main */
+
+.box-input {
+    padding-top: 10%;
+    text-align: center;
+}
+
+h1 {
+    color: var(--secondary-color);
+}
+
+/* Media social */
+
+.hero-2 {
+    height: 100vh;
+    width: 100%;
+    background: var(--box-color);
+    position: relative;
+}
+
+.box {
+    display: flex;
+    padding: 3%;
+    justify-content: center;
+}
+
+.logo {
+    margin: 3%;
+}
+
+.row {
+    margin: 5%;
+    padding-top: 100%;
+}
+
+p {
+    color: var(--secondary-color);
+}
+
+.box-input {
+    padding: 3%;
+}
+
+.hero-btn {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: var(--secondary-color);
+    border-radius: 15px;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: var(--primary-color);
+    position: relative;
+    cursor: pointer;
+    width: 30%;
+    left: 35%;
+    top: 50%;
+}
+
+.hero-btn:hover {
+    background: #f44336;
+    transition: 1s;
+}
+
+/* Footer */
+
+.footer {
+    margin: 0;
+    padding: 0.23%;
+    background-color: var(--footer-color);
+    font-size: 11px;
+    height: 4vh;
+}
+
+h3 {
+    color: var(--secondary-color);
+}
+
+@media only screen and (min-width: 600px) {
+    .hero {
+        height: 20vh;
+    }
+    /* Main */
+    .box-input {
+        padding-top: 2%;
+    }
+    /* Media social */
+    .box {
+        padding: 0;
+        height: 15%;
+    }
+    .hero-2 {
+        padding: 5%;
+    }
+    .row {
+        margin: 5%;
+        padding-top: 10%;
+    }
+}

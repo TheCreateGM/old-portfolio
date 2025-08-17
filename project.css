@@ -1,0 +1,270 @@
+/* For mobile phones: */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    transition: 0.6s cubic-bezier(0.28, -0.03, 0, 0.99);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 15px;
+}
+
+/* Nav */
+
+:root {
+    --primary-color: #ffffeb;
+    --secondary-color: #212121;
+    --box-color: #ffffc4;
+    --footer-color: #ffffb1;
+}
+
+.dark-theme {
+    --primary-color: #000015;
+    --secondary-color: #fff;
+    --box-color: #00003d;
+    --footer-color: #000050;
+}
+
+#icon {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    padding: 0;
+}
+
+.hero {
+    height: 25vh;
+    width: 100%;
+    background: var(--primary-color);
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 8px 9px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 8px 12px;
+    position: relative;
+    background-color: var(--box-color);
+    border-radius: 5px;
+    display: inline-block;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+nav ul li a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 13px;
+}
+
+nav ul li:hover {
+    background: #f44336;
+    transition: 1s;
+}
+
+/* Main */
+
+.box-input {
+    padding-top: 10%;
+    text-align: center;
+}
+
+h1 {
+    color: var(--secondary-color);
+}
+
+.row {
+    margin-top: 5%;
+    display: block;
+    justify-content: space-between;
+    margin: 5%;
+}
+
+.nav-row {
+    display: flex;
+    padding: 9px 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ul-row {
+    flex: 1;
+    text-align: center;
+}
+
+.li-col {
+    list-style: none;
+    padding: 8px 12px;
+    position: relative;
+    background-color: var(--box-color);
+    border-radius: 5px;
+    display: inline-block;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.li-col a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.li-col:hover {
+    background: #f44336;
+    transition: 1s;
+}
+
+/* Website */
+
+.web-row {
+    text-align: left;
+    display: flex;
+}
+
+.hero-2 {
+    height: 100vh;
+    width: 100%;
+    background: var(--box-color);
+    position: relative;
+}
+
+h2 {
+    color: var(--secondary-color);
+}
+
+.box {
+    padding: 3%;
+}
+
+.logo-col {
+    padding-top: 2%;
+}
+
+/* website info */
+
+.row-info {
+    display: block;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+.col {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.col img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+.col a {
+    width: 100%;
+    display: block;
+}
+
+.layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layer1 {
+    background: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: none;
+}
+
+.layer:hover {
+    background: var(--footer-color);
+}
+
+.layer h3 {
+    width: 100%;
+    font-weight: 500;
+    color: var(--secondary-color);
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.layer:hover h3 {
+    bottom: 49%;
+    opacity: 1;
+}
+
+/* 3D Model */
+
+.hero-3 {
+    height: 100vh;
+    width: 100%;
+    background: var(--primary-color);
+    position: relative;
+}
+
+/* Footer */
+
+.footer {
+    margin: 0;
+    padding: 0.23%;
+    background-color: var(--footer-color);
+    font-size: 11px;
+    height: 4vh;
+}
+
+h3 {
+    color: var(--secondary-color);
+}
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .hero {
+        height: 30vh;
+        width: 100%;
+    }
+    /* Main */
+    .box-input {
+        padding-top: 2%;
+    }
+    /* Website info */
+    .row-info {
+        display: flex;
+        justify-content: space-between;
+        padding: 2%;
+    }
+}
